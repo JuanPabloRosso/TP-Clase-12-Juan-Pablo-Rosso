@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Genero variables para color y tipografia */
+:root { 
+    --mainFont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --mainColor: White;
+}
+
+/* Asigno tipografia al todo, elimino los estilos en listas y decoraciones */
+*{ 
+    font-family: var(--mainFont);
+    color: var(--mainColor);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header{
+    background-image: url(/Assets/Fondo\ containerMainHeader.webp);
+    min-height: 100vh;
+}
+
+.containerNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.containerNavBar div img {
+    max-height: 70px;
+    padding-top: 20px;
+}
+
+.navBar ul {
+    display: flex;
+    gap: 30px;
+    color: white;
+} 
+/* ------Siguiente contenedor-------- */
+.imgPresentacion{
+    width: 70%;
+    padding-left: 10%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.containerMainHeader {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    height: 100vh;
+}
+
+.mainPresentacion{
+width: 50%;
+}
+
