@@ -1,43 +1,44 @@
-body{
+body{ /*reseteo*/
     margin: 0;
     padding: 0;
 }
 
-/* Genero variables para color y tipografia */
-:root { 
+:root { /* Genero variables para color y tipografia */ 
     --mainFont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --mainColor: White;
 }
 
-/* Asigno tipografia al todo, elimino los estilos en listas y decoraciones */
-*{ 
+*{  /* Asigno tipografia al todo, elimino los estilos en listas y decoraciones */
     font-family: var(--mainFont);
     color: var(--mainColor);
     list-style-type: none;
     text-decoration: none;
 }
 
-header{
+header{ /*asigno img de fondo, hago que cubra todo y le doy 100vh al contenedor para que cubra todo el alto de la pantalla*/
     background-image: url(/Assets/Fondo\ containerMainHeader.webp);
-    min-height: 100vh;
+    background-size: cover;
+    max-height: 100vh;
 }
 
-.containerNavBar {
+.containerNavBar { /*Vuelvo flex a la barra de navehacion para poder centrar y dirigir a ambos extremos*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
 }
 
-.containerNavBar div img {
+.containerNavBar div img { /*Tamaño de logo*/
     max-height: 70px;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 .navBar ul {
     display: flex;
     gap: 30px;
     color: white;
+    cursor: pointer;
 } 
 /* ------Siguiente contenedor-------- */
 .imgPresentacion{
@@ -49,14 +50,46 @@ h1{
     font-size: 40px;
 }
 
-.containerMainHeader {
+.containerMainHeader { /*doy altura al contenedor para centrar con flex y separo con padding del costado*/
     display: flex;
     align-items: center;
     padding-left: 100px;
-    height: 100vh;
+    height: 90vh;
 }
 
 .mainPresentacion{
-width: 50%;
+    width: 50%;
 }
 
+/* Siguientes contenedores - Contenedores categorias */
+
+#categories { /*centro con flex, separo con gap y centro el texto en cada uno de sus contenedores*/
+    background-image: url(/Assets/Fondo\ categories.webp);
+    background-size: cover;
+    backdrop-filter: blur(80px);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+    text-align: center;
+    
+}
+
+#categories div p{ /*Separo el parrafo de los bordes*/
+    padding: 5px 10px 0 10px;
+}
+
+.cardCategories{
+    background-color: #065fbd;
+    width: 370px;
+    min-height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 11px 10px 12px 2px rgba(172,218,232,0.78);
+}
+
+.divImg img{
+    width: 400px;
+    max-height: 300px;
+}
