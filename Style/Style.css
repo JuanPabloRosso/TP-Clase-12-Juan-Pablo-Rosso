@@ -1,6 +1,7 @@
 body{ /*reseteo*/
     margin: 0;
     padding: 0;
+    background-color: #181818 ;
 }
 
 :root { /* Genero variables para color y tipografia */ 
@@ -50,6 +51,10 @@ h1{
     font-size: 40px;
 }
 
+h2{
+    font-size: 35px;
+}
+
 .containerMainHeader { /*doy altura al contenedor para centrar con flex y separo con padding del costado*/
     display: flex;
     align-items: center;
@@ -64,32 +69,72 @@ h1{
 /* Siguientes contenedores - Contenedores categorias */
 
 #categories { /*centro con flex, separo con gap y centro el texto en cada uno de sus contenedores*/
-    background-image: url(/Assets/Fondo\ categories.webp);
-    background-size: cover;
-    backdrop-filter: blur(80px);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 30px;
+    gap: 50px;
     text-align: center;
     
 }
 
 #categories div p{ /*Separo el parrafo de los bordes*/
-    padding: 5px 10px 0 10px;
+    padding: 0px 10px 0 10px;
 }
 
 .cardCategories{
     background-color: #065fbd;
-    width: 370px;
-    min-height: 460px;
+    width: 300px;
+    min-height: 370px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 11px 10px 12px 2px rgba(172,218,232,0.78);
+    box-shadow: 5px 5px 5px 3px rgba(172,218,232,0.30);
 }
 
 .divImg img{
-    width: 400px;
-    max-height: 300px;
+    width: 300px;
+    max-height: 250px;
 }
+
+/*Siguiente seccion*/
+
+#products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/Assets/Fondo\ categories.webp);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cardProductos{
+    padding-top: 5px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.cardProductos .cards{
+    padding: 10px 0 20px 0;
+    border: solid 2px gray;
+    border-radius: 10px;
+    background-color: rgba(7,102,199,0.7);
+}
+
+.imgProductos{
+    width: 35%;
+    margin-top: 5px;
+}
+
+.cards a{
+    border: solid 1px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: rgb(7,102,199);
+
+}
+
+/*-------------------*/
+
+
