@@ -89,6 +89,11 @@ h2{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 5px 5px 5px 3px rgba(172,218,232,0.30);
+    transition: 0.5s transform;
+}
+
+.cardCategories:hover{
+transform: scale(1.2)
 }
 
 .divImg img{
@@ -120,6 +125,11 @@ h2{
     border: solid 2px gray;
     border-radius: 10px;
     background-color: rgba(7,102,199,0.7);
+    transition: 0.5s transform;
+}
+
+.cardProductos .cards:hover{
+    transform: scale(1.2);
 }
 
 .imgProductos{
@@ -133,6 +143,11 @@ h2{
     border-radius: 5px;
     background-color: rgb(7,102,199);
 
+}
+
+.cards a:hover{
+    background-color: #fdfd07;
+    color: rgb(7,102,199);
 }
 
 /*-------------------*/
