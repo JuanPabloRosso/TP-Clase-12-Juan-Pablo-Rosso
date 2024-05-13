@@ -1,7 +1,7 @@
 body{ /*reseteo*/
     margin: 0;
     padding: 0;
-    background-color: azure
+    background-image: url(/Assets/piresten.jpg);
 }
 
 :root { /* Genero variables para color y tipografia */ 
@@ -17,8 +17,6 @@ body{ /*reseteo*/
 }
 
 header{ /*asigno img de fondo, hago que cubra todo y le doy 100vh al contenedor para que cubra todo el alto de la pantalla*/
-    background-image: url(/Assets/Fondo\ containerMainHeader.webp);
-    background-size: cover;
     max-height: 100vh;
 }
 
@@ -55,6 +53,10 @@ h2{
     font-size: 35px;
 }
 
+h3{
+    color: black;
+}
+
 .containerMainHeader { /*doy altura al contenedor para centrar con flex y separo con padding del costado*/
     display: flex;
     align-items: center;
@@ -64,7 +66,7 @@ h2{
 
 .mainPresentacion{
     width: 50%;
-}
+    }
 
 /* Siguientes contenedores - Contenedores categorias */
 
@@ -80,15 +82,16 @@ h2{
 
 #categories div p{ /*Separo el parrafo de los bordes*/
     padding: 0px 10px 0 10px;
+    color: black;
 }
 
 .cardCategories{
-    background-color: #065fbd;
+    background-color: gray;
     width: 300px;
     min-height: 370px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 5px 5px 5px 3px rgba(0, 5, 7, 0.534);
+    box-shadow: 5px 5px 5px 3px rgba(100, 111, 116, 0.384);
     transition: 0.5s transform;
 }
 
@@ -107,8 +110,6 @@ transform: scale(1.2)
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/Assets/Fondo\ categories.webp);
-    background-size: cover;
     min-height: 100vh;
 }
 
@@ -124,7 +125,7 @@ transform: scale(1.2)
     padding: 10px 0 20px 0;
     border: solid 2px gray;
     border-radius: 10px;
-    background-color: rgba(7,102,199,0.7);
+    background-color: rgba(145, 165, 184, 0.541);
     transition: 0.5s transform;
 }
 
@@ -153,7 +154,6 @@ transform: scale(1.2)
 /*-------------------*/
 #contact{
     min-height: 70vh;
-    background-color: aliceblue;
 }
 
 form{
@@ -162,7 +162,7 @@ form{
     margin: auto;
     padding: 0 20px 20px 20px;
     border-radius: 15px;
-    background-color: grey;
+    background-color: rgba(0, 5, 7, 0.534)
 }
 
 form *{
@@ -170,7 +170,6 @@ form *{
     width: 100%;
     margin: 15px auto;
     border: none;
-    color: black
 }
 
 form textarea, form input{
