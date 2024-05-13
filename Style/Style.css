@@ -93,7 +93,7 @@ h3{
 }
 
 .cardCategories{
-    background-color: gray;
+    background-color: rgba(145, 165, 184, 0.541);
     width: 300px;
     min-height: 370px;
     border-radius: 10px;
@@ -220,4 +220,17 @@ form textarea, form input{
 
 .iconWhatsapp i{
     font-size: 50px;
+}
+
+footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(1, 8, 12, 0.795);
+    margin-top: 40px;
+}
+
+footer h4{
+    margin-left: 45px;
 }
