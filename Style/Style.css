@@ -51,6 +51,7 @@ h1{
 
 h2{
     font-size: 35px;
+    text-align: center;
 }
 
 h3{
@@ -70,8 +71,8 @@ h3{
 
 /* Siguientes contenedores - Contenedores categorias */
 
-#categories { /*centro con flex, separo con gap y centro el texto en cada uno de sus contenedores*/
-    min-height: 100vh;
+.categoriesDiv { /*centro con flex, separo con gap y centro el texto en cada uno de sus contenedores*/
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -80,7 +81,7 @@ h3{
     
 }
 
-#categories div p{ /*Separo el parrafo de los bordes*/
+.categoriesDiv div p{ /*Separo el parrafo de los bordes*/
     padding: 0px 10px 0 10px;
     color: black;
 }
@@ -123,10 +124,11 @@ transform: scale(1.2)
 
 .cardProductos .cards{
     padding: 10px 0 20px 0;
-    border: solid 2px gray;
+    border: solid 2px white;
     border-radius: 10px;
     background-color: rgba(145, 165, 184, 0.541);
     transition: 0.5s transform;
+
 }
 
 .cardProductos .cards:hover{
@@ -187,8 +189,4 @@ form textarea, form input{
     border-radius: 10px;
 }
 
-#contact h2{
-    color: black;
-    text-align: center;
-}
 
