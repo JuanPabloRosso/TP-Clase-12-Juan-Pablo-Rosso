@@ -200,14 +200,24 @@ form textarea, form input{
     color: var(--mainColor);
 }
 
-i{
+.iconWhatsapp{
     position: fixed;
-    background-color:#229d14;
+    background-color: #229d14;
+    bottom: 33px;
+    right: 33px;
     width: 70px;
     height: 70px;
-    bottom: 30px;
-    right: 30px;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconWhatsapp a{
+    text-decoration: none;
+}
+
+.iconWhatsapp i{
+    font-size: 50px;
 }
