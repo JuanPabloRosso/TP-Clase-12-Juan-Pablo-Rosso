@@ -1,7 +1,7 @@
 body{ /*reseteo*/
     margin: 0;
     padding: 0;
-    background-color: #181818 ;
+    background-color: azure
 }
 
 :root { /* Genero variables para color y tipografia */ 
@@ -88,7 +88,7 @@ h2{
     min-height: 370px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 5px 5px 5px 3px rgba(172,218,232,0.30);
+    box-shadow: 5px 5px 5px 3px rgba(0, 5, 7, 0.534);
     transition: 0.5s transform;
 }
 
@@ -151,5 +151,45 @@ transform: scale(1.2)
 }
 
 /*-------------------*/
+#contact{
+    min-height: 70vh;
+    background-color: aliceblue;
+}
 
+form{
+    border: solid 1px;
+    width: 40%;
+    margin: auto;
+    padding: 0 20px 20px 20px;
+    border-radius: 15px;
+    background-color: grey;
+}
+
+form *{
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+    border: none;
+    color: black
+}
+
+form textarea, form input{
+    border: solid 1px gray;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+#contact button{
+    color: black;
+    background-color: #fdfd07;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#contact h2{
+    color: black;
+    text-align: center;
+}
 
