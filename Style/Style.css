@@ -234,3 +234,41 @@ footer{
 footer h4{
     margin-left: 45px;
 }
+
+
+@media (max-width: 880px){ 
+    .categoriesDiv{
+        flex-direction: column; /*Funciona para tablet y mobile*/
+    }
+
+    .cardProductos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer{
+        align-items: center;
+        text-align: center;
+    }
+
+    footer ul li{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px){
+    .cardProductos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .imgPresentacion{
+        display: none;
+    }
+
+    .containerMainHeader{
+        padding-left: 50px;
+    }
+
+    .mainPresentacion{
+        width: 90%;
+        }
+    
