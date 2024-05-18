@@ -279,3 +279,7 @@ footer h4{
     .cardProductos .cards, .cardCategories:hover{
         transform: none;
     }
+
+    .navBar ul{
+        display: none;
+    }
