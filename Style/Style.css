@@ -103,7 +103,7 @@ h3{
 }
 
 .cardCategories:hover{
-transform: scale(1.2)
+transform: scale(1.03);
 }
 
 .divImg img{
@@ -138,7 +138,7 @@ transform: scale(1.2)
 }
 
 .cardProductos .cards:hover{
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 
 .imgProductos{
@@ -271,3 +271,11 @@ footer h4{
     .mainPresentacion{
         width: 90%;
         }
+
+    .navBar ul{
+        gap: 0px;
+    }
+
+    .cardProductos .cards, .cardCategories:hover{
+        transform: none;
+    }
