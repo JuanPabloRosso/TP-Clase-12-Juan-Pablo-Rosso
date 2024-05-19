@@ -142,7 +142,7 @@ transform: scale(1.03);
 }
 
 .imgProductos{
-    width: 35%;
+    width: 45%;
     margin-top: 5px;
 }
 
@@ -228,6 +228,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     background-color: rgba(1, 8, 12, 0.795);
+    background-size: cover;
     margin-top: 40px;
 }
 
@@ -237,6 +238,25 @@ footer h4{
 
 
 @media (max-width: 880px){ 
+
+    .containerNavBar { 
+        padding: 5px 10px;
+    }
+
+    .containerNavBar div img { /*Tamaño de logo*/
+        max-height: 40px;
+        padding-top: 7px
+    }
+
+    .containerMainHeader { 
+        padding-left: 10px;
+    }
+    
+    .mainPresentacion{
+        width: 70%;
+        }
+    
+    
     .categoriesDiv{
         flex-direction: column; /*Funciona para tablet y mobile*/
     }
@@ -256,6 +276,18 @@ footer h4{
 }
 
 @media (max-width: 480px){
+    h1{
+        font-size: 28px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
     .cardProductos{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -276,10 +308,12 @@ footer h4{
         gap: 0px;
     }
 
-    .cardProductos .cards, .cardCategories:hover{
+    .cardCategories:hover{
         transform: none;
     }
 
-    .navBar ul{
-        display: none;
+    .cardProductos .cards{
+        transform: scale(1);
     }
+
+}
