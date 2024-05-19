@@ -240,11 +240,11 @@ footer h4{
 @media (max-width: 880px){ 
 
     .containerNavBar { 
-        padding: 5px 10px;
+        padding: 10px 20px;
     }
 
     .containerNavBar div img { /*Tamaño de logo*/
-        max-height: 40px;
+        max-height: 45px;
         padding-top: 7px
     }
 
@@ -305,7 +305,7 @@ footer h4{
         }
 
     .navBar ul{
-        gap: 0px;
+        gap: 5px;
     }
 
     .cardCategories:hover{
@@ -314,7 +314,7 @@ footer h4{
 
     .cardProductos .cards{
         transform: scale(1);
-        width: 290px;
+        width: 300px;
     }
 
     form{
