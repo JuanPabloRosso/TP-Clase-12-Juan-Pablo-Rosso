@@ -271,9 +271,10 @@ footer h4{
         text-align: center;
     }
 
-    footer ul li{
-        padding: 5px;
+    footer h4{
+        margin-left: 0px;
     }
+
 }
 
 @media (max-width: 480px){
@@ -335,5 +336,9 @@ footer h4{
     
     .iconWhatsapp i{
         font-size: 35px;
+    }
+
+    footer ul{
+        padding-right: 30px;
     }
 }
