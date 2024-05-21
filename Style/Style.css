@@ -16,6 +16,7 @@ body{ /*reseteo*/
     color: var(--mainColor);
     list-style-type: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 p{
@@ -205,8 +206,8 @@ form textarea, form input{
     background-color: #229d14;
     bottom: 33px;
     right: 33px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -276,6 +277,10 @@ footer h4{
 }
 
 @media (max-width: 480px){
+    header{ /*asigno img de fondo, hago que cubra todo y le doy 100vh al contenedor para que cubra todo el alto de la pantalla*/
+        max-height: 90vh;
+    }
+
     h1{
         font-size: 28px;
     }
@@ -322,8 +327,8 @@ footer h4{
     }
 
     .iconWhatsapp{
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         bottom: 25px;
         right: 25px;
     }
